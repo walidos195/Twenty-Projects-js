@@ -1,0 +1,97 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f1f1f1;
+    background: linear-gradient(45deg, rgb(59, 50, 50), rgb(22, 28, 29));
+    height: 100vh;
+}
+
+.meteo {
+    background: linear-gradient(45deg, #1068b6, #ec60a6);
+    width: 800px;
+    height: 600px;
+    margin: 100px auto 0;
+
+    display: grid;
+    grid-template: 100px 300px 100px 100px / repeat(8, 100px);
+}
+
+.title{
+
+    grid-area: 1/1/2/-1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+
+.main {
+    grid-area:2/1/3/-1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .image{
+    width: 50%;
+}
+.main img {
+
+    width: 100%;
+    height:auto;
+}
+
+.main .detail {
+    width: 50%;
+}
+
+.main .detail .etat {
+    font-size:40px;
+}
+
+.main .detail .etat::first-letter {
+    text-transform: capitalize;
+}
+.main .detail .temp {
+    font-size:60px;
+}
+
+.main .detail .country {
+    font-size:40px;
+    word-wrap:break-word;
+}
+
+.table-hour {
+    grid-area:3/1/4/-1;
+}
+
+.table-day {
+    grid-area:4/1/5/-1;
+}
+
+.table-day, .table-hour{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+ .item {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.item:not(:last-child){
+    border-right: 1px solid white;
+}
+ .item p {
+    text-align: center;
+    margin: 10px;
+}
