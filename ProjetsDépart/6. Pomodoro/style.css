@@ -8,3 +8,39 @@ body {
     background: linear-gradient(to right, #70e1f5, #ffd194);
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    text-align: center;
+    font-size: 7vw;
+    margin: 20px auto 20px;
+}
+.main{
+    display:flex;
+    justify-content: center;
+}
+.main div{
+    display:flex;
+    flex-direction: column;
+    padding: 50px 150px 50px 150px;
+    margin: 10px 1px 10px;
+    background: #f1f1f1;
+    text-align: center;
+}
+.main div :first-child{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.container-btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+.container-btns .btn{
+    padding:20px 45px 20px 45px;
+    font-size: 20px;
+}
+.info{
+    text-align: center;
+}

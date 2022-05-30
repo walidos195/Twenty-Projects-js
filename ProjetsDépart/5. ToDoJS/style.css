@@ -9,3 +9,77 @@ body {
     color: #f1f1f1;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+h1 {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 5vw;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+form:focus-within label, .activeinput label {
+    top: -33%;
+    color: #f1f1f1;
+}
+
+label {
+    position: absolute;
+    color: #333;
+    top: 10%;
+    padding-left: 8px;
+    transition: all 0.3s ease-in;
+}
+
+input[type=text] {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+    padding: 10px;
+    max-width: 150px;
+}
+
+.tasks {
+    margin-top: 20px;
+    list-style: none;
+}
+
+li {
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 15px;
+    display: flex;
+    margin: 10px;
+}
+
+li input[type=checkbox] {
+    width: 35px;
+    height: 35px;
+}
+
+li span {
+    margin: auto 10px;
+}
+
+li button {
+    width: 35px;
+    margin-left: auto;
+    padding: 5px;
+}
+
+li img {
+    pointer-events: painted;
+}
