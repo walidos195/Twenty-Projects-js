@@ -8,3 +8,56 @@ body {
     background: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
+h1{
+    color:azure;
+    font-size: 5vw;
+    margin: 40px 0 50px 0;
+    text-align: center;
+
+}
+form{
+    margin: 20px auto 20px; 
+    display: flex;  
+    justify-content: center;
+}
+input{
+    padding: 20px;
+    width: 55vw;
+    font-size: 27px;
+}
+.user{
+    display: flex;
+    max-width: 50%;
+    border: 1px solid;
+    flex-direction: column;
+    margin: 150px auto ;
+    background-color: azure;
+    border-radius: 10px;
+}
+.head{
+    border-bottom: 1px black dashed;
+    padding-bottom: 20px;
+}
+.head h3{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.photo{
+    max-height: 100px;
+}
+.photo img{
+    border-radius: 50%;
+    border: 1px black solid;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.stats{
+    padding: 22px;
+}
+.stats p{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
